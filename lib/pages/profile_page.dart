@@ -107,7 +107,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 child: Container(
                   alignment: Alignment.bottomLeft,
                   child: Text(
-                    "FlutterTutorial.Net",
+                    "Flutter APP",
                     style: TextStyle(
                         fontSize: 25,
                         color: Colors.white,

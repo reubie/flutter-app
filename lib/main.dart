@@ -33,6 +33,7 @@ class FlutterApp extends StatelessWidget {
         scaffoldBackgroundColor: Colors.grey.shade100,
         primarySwatch: Colors.grey,
       ),
+      debugShowCheckedModeBanner: false,
       home: SplashScreen(title: 'Flutter Login UI'),
     );
   }
