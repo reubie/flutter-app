@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_app/pages/forgot_password_page.dart';
 import 'package:flutter_app/pages/login_page.dart';
+import 'package:flutter_app/pages/registration_page.dart';
 import 'package:flutter_app/pages/splash_screen.dart';
 import 'package:flutter_app/pages/widgets/header_widget.dart';
 import 'forgot_password_verification_page.dart';
