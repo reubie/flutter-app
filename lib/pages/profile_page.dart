@@ -6,6 +6,7 @@ import 'package:flutter_app/pages/login_page.dart';
 import 'package:flutter_app/pages/registration_page.dart';
 import 'package:flutter_app/pages/splash_screen.dart';
 import 'package:flutter_app/pages/widgets/header_widget.dart';
+import 'package:flutter_app/pages/widgets/json.dart';
 import 'forgot_password_verification_page.dart';
 
 class ProfilePage extends StatefulWidget {
@@ -122,16 +123,13 @@ class _ProfilePageState extends State<ProfilePage> {
                   color: Theme.of(context).accentColor,
                 ),
                 title: Text(
-                  'Splash Screen',
+                  'Design',
                   style: TextStyle(
                       fontSize: 17, color: Theme.of(context).accentColor),
                 ),
                 onTap: () {
-                  Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) =>
-                              SplashScreen(title: "Splash Screen")));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => DataFromApi()));
                 },
               ),
               ListTile(
