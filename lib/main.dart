@@ -29,7 +29,7 @@ class FlutterApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Login UI',
+      title: 'Flutter App',
       theme: ThemeData(
         primaryColor: _primaryColor,
         accentColor: _accentColor,
@@ -37,7 +37,7 @@ class FlutterApp extends StatelessWidget {
         primarySwatch: Colors.grey,
       ),
       debugShowCheckedModeBanner: false,
-      home: SplashScreen(title: 'Flutter Login UI'),
+      home: SplashScreen(title: 'Flutter App'),
     );
   }
 }

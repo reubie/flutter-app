@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 
 Future<User?> createAccount(String firstname, String lastname, String email,
-    int phone, String password) async {
+    String phone, String password) async {
   FirebaseAuth _auth = FirebaseAuth.instance;
 
   try {
