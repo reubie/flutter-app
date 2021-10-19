@@ -5,6 +5,7 @@ import 'package:flutter_app/pages/forgot_password_page.dart';
 import 'package:flutter_app/pages/login_page.dart';
 import 'package:flutter_app/pages/registration_page.dart';
 import 'package:flutter_app/pages/splash_screen.dart';
+import 'package:flutter_app/pages/widgets/dictionary.dart';
 import 'package:flutter_app/pages/widgets/header_widget.dart';
 import 'package:flutter_app/pages/widgets/json.dart';
 import 'forgot_password_verification_page.dart';
@@ -215,6 +216,25 @@ class _ProfilePageState extends State<ProfilePage> {
                     context,
                     MaterialPageRoute(
                         builder: (context) => ForgotPasswordVerificationPage()),
+                  );
+                },
+              ),
+              ListTile(
+                leading: Icon(
+                  Icons.verified_user_sharp,
+                  size: _drawerIconSize,
+                  color: Theme.of(context).accentColor,
+                ),
+                title: Text(
+                  'Dictionary',
+                  style: TextStyle(
+                      fontSize: _drawerFontSize,
+                      color: Theme.of(context).accentColor),
+                ),
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SortablePage()),
                   );
                 },
               ),
