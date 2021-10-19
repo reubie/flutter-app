@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/pages/splash_screen.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() {
+Future main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp();
   runApp(FlutterApp());
 }
 
