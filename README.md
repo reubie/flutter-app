@@ -1,16 +1,37 @@
 # flutter_app
 
-A new Flutter project.
+## Author
 
-## Getting Started
+[Reuben Wachira Nguyo](https://github.com/reubie)
 
-This project is a starting point for a Flutter application.
+## Description
 
-A few resources to get you started if this is your first Flutter project:
+This project is a flutter application for making API calls to a JSON data as well as diplaying data array in a list view with an ascending or descending option
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+## Installation / Setup instruction
+* Open Terminal {Ctrl+Alt+T}
+
+* git clone ```https://github.com/reubie/flutter-app.git```
+
+* cd flutter_app
+
+* code . or atom . depending on the text editor of your choise.
+
+## Technologies Used
+
+* [Dart]
+
+* markdown
+
+## Known Bugs
+* User authentication process brings null value
+
+## Contact Information 
+
+If you have any question or contributions, please email me at [r.nguyo27@gmail.com]
+
+## License
+* *MIT License:*
+* Copyright (c) 2021 **Reuben Wachira Nguyo**
