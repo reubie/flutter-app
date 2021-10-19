@@ -25,6 +25,7 @@ class _ProfilePageState extends State<ProfilePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        centerTitle: true,
         title: Text(
           "Profile Page",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
@@ -107,38 +108,45 @@ class _ProfilePageState extends State<ProfilePage> {
                   ),
                 ),
                 child: Container(
-                  alignment: Alignment.bottomLeft,
-                  child: Text(
-                    "Flutter APP",
-                    style: TextStyle(
-                        fontSize: 25,
-                        color: Colors.white,
-                        fontWeight: FontWeight.bold),
-                  ),
-                ),
+                    alignment: Alignment.bottomLeft,
+                    child: Text(
+                      "Flutter APP",
+                      style: TextStyle(
+                          fontSize: 25,
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold),
+                    ),
+                    decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                            begin: Alignment.topLeft,
+                            end: Alignment.bottomRight,
+                            colors: <Color>[
+                          Theme.of(context).primaryColor,
+                          Theme.of(context).accentColor,
+                        ]))),
               ),
               ListTile(
                 leading: Icon(
-                  Icons.screen_lock_landscape_rounded,
+                  Icons.person,
                   size: _drawerIconSize,
                   color: Theme.of(context).accentColor,
                 ),
                 title: Text(
-                  'Design',
+                  'Info',
                   style: TextStyle(
                       fontSize: 17, color: Theme.of(context).accentColor),
                 ),
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => DataFromApi()));
+                      MaterialPageRoute(builder: (context) => ProfilePage()));
                 },
               ),
               ListTile(
-                leading: Icon(Icons.login_rounded,
+                leading: Icon(Icons.list,
                     size: _drawerIconSize,
                     color: Theme.of(context).accentColor),
                 title: Text(
-                  'Login Page',
+                  'Design',
                   style: TextStyle(
                       fontSize: _drawerFontSize,
                       color: Theme.of(context).accentColor),
@@ -146,7 +154,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => LoginPage()),
+                    MaterialPageRoute(builder: (context) => DataFromApi()),
                   );
                 },
               ),
@@ -155,11 +163,11 @@ class _ProfilePageState extends State<ProfilePage> {
                 height: 1,
               ),
               ListTile(
-                leading: Icon(Icons.person_add_alt_1,
+                leading: Icon(Icons.reply_all_rounded,
                     size: _drawerIconSize,
                     color: Theme.of(context).accentColor),
                 title: Text(
-                  'Registration Page',
+                  'Response',
                   style: TextStyle(
                       fontSize: _drawerFontSize,
                       color: Theme.of(context).accentColor),
@@ -177,51 +185,7 @@ class _ProfilePageState extends State<ProfilePage> {
               ),
               ListTile(
                 leading: Icon(
-                  Icons.password_rounded,
-                  size: _drawerIconSize,
-                  color: Theme.of(context).accentColor,
-                ),
-                title: Text(
-                  'Forgot Password Page',
-                  style: TextStyle(
-                      fontSize: _drawerFontSize,
-                      color: Theme.of(context).accentColor),
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => ForgotPasswordPage()),
-                  );
-                },
-              ),
-              Divider(
-                color: Theme.of(context).primaryColor,
-                height: 1,
-              ),
-              ListTile(
-                leading: Icon(
-                  Icons.verified_user_sharp,
-                  size: _drawerIconSize,
-                  color: Theme.of(context).accentColor,
-                ),
-                title: Text(
-                  'Verification Page',
-                  style: TextStyle(
-                      fontSize: _drawerFontSize,
-                      color: Theme.of(context).accentColor),
-                ),
-                onTap: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(
-                        builder: (context) => ForgotPasswordVerificationPage()),
-                  );
-                },
-              ),
-              ListTile(
-                leading: Icon(
-                  Icons.verified_user_sharp,
+                  Icons.book_rounded,
                   size: _drawerIconSize,
                   color: Theme.of(context).accentColor,
                 ),
